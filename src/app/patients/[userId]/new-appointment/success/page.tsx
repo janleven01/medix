@@ -37,6 +37,7 @@ const RequestSuccess = async ({
             height={300}
             width={250}
             alt="success"
+            unoptimized
           />
           <h2 className="text-4xl mb-6 max-w-[600px] text-center">
             Your <span className="text-green-500">appointment request</span> has
