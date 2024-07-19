@@ -7,7 +7,6 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
 
   return (
     <main className="container mt-16">
-      {/* TODO: OTP Verification | PasskeyModal */}
       <section className="my-auto w-full">
         <div className="max-w-[1150px] max-md:max-w-[500px] mx-auto">
           <div className="flex items-center max-md:justify-center gap-2 mb-10">

@@ -77,7 +77,7 @@ input:-webkit-autofill:active {
   }
   /* shadcn-otp */
   .shadcn-otp-slot {
-    @apply size-16 border rounded-lg my-6 text-4xl
+    @apply md:size-16 size-12 border rounded-lg my-6 text-4xl
   }
 }
 

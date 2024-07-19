@@ -43,7 +43,7 @@ const PassKeyModal = () => {
       }
     }
     // Reason for disabling: Adding router inside the useEffect dependency will cause an infinite loop
-    
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [encryptedKey]);
 
@@ -69,7 +69,7 @@ const PassKeyModal = () => {
 
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
-      <AlertDialogContent className="">
+      <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle className="flex-between">
             Admin Access Verification
@@ -82,7 +82,7 @@ const PassKeyModal = () => {
               className="cursor-pointer"
             />
           </AlertDialogTitle>
-          <AlertDialogDescription>
+          <AlertDialogDescription className="text-left">
             To access the admin page, please enter the passkey.
           </AlertDialogDescription>
           <div>
@@ -91,7 +91,7 @@ const PassKeyModal = () => {
               value={passkey}
               onChange={(value) => setPasskey(value)}
             >
-              <InputOTPGroup className="w-full flex justify-between">
+              <InputOTPGroup className="w-full flex-between">
                 <InputOTPSlot className="shadcn-otp-slot" index={0} />
                 <InputOTPSlot className="shadcn-otp-slot" index={1} />
                 <InputOTPSlot className="shadcn-otp-slot" index={2} />
@@ -100,12 +100,14 @@ const PassKeyModal = () => {
                 <InputOTPSlot className="shadcn-otp-slot" index={5} />
               </InputOTPGroup>
             </InputOTP>
-
             {error && <p className="text-destructive text-center">{error}</p>}
           </div>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogAction onClick={(e) => validatePasskey(e)} className="w-full">
+          <AlertDialogAction
+            onClick={(e) => validatePasskey(e)}
+            className="w-full"
+          >
             Enter Admin Passkey
           </AlertDialogAction>
         </AlertDialogFooter>

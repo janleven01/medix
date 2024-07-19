@@ -1,5 +1,6 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import {toZonedTime} from 'date-fns-tz'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -40,22 +41,22 @@ export const formatDateTime = (dateString: Date | string) => {
     hour12: true, // use 12-hour clock (true) or 24-hour clock (false)
   };
 
-  const formattedDateTime: string = new Date(dateString).toLocaleString(
+  const formattedDateTime: string = toZonedTime(new Date(dateString), "Asia/Manila").toLocaleString(
     "en-US",
     dateTimeOptions
   );
 
-  const formattedDateDay: string = new Date(dateString).toLocaleString(
+  const formattedDateDay: string = toZonedTime(new Date(dateString), "Asia/Manila").toLocaleString(
     "en-US",
     dateDayOptions
   );
 
-  const formattedDate: string = new Date(dateString).toLocaleString(
+  const formattedDate: string = toZonedTime(new Date(dateString), "Asia/Manila").toLocaleString(
     "en-US",
     dateOptions
   );
 
-  const formattedTime: string = new Date(dateString).toLocaleString(
+  const formattedTime: string = toZonedTime(new Date(dateString), "Asia/Manila").toLocaleString(
     "en-US",
     timeOptions
   );

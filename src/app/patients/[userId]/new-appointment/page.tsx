@@ -9,12 +9,12 @@ export default async function NewAppointment({
 
   return (
     <main className="flex-between container h-screen max-h-screen gap-6">
-      <section className="relative max-h-[700px] lg:h-[95%] h-[85%] w-full rounded-[3rem] my-auto hidden md:block overflow-hidden text-start bg-gradient-to-tl from-white via-primary to-primary">
+      <section className="relative max-h-[700px] lg:h-[95%] h-[90%] w-full rounded-[3rem] my-auto hidden md:block overflow-hidden text-start bg-gradient-to-tl from-white via-primary to-primary">
         <div className="xl:p-18 lg:p-10 p-4">
           <h1 className="lg:text-[55px] text-[44px] leading-tight font-bold">
             Start Booking Appointments Instantly
           </h1>
-          <p className="lg:pt-10 pt-6 text-lg 2xl:max-w-[90%]">
+          <p className="lg:pt-10 pt-4 text-lg 2xl:max-w-[90%]">
             Experience a streamlined platform for effortless appointment
             scheduling.
           </p>
@@ -29,7 +29,7 @@ export default async function NewAppointment({
         />
       </section>
 
-      <section className="my-auto w-full">
+      <section className="my-auto w-full py-5">
         <div className="max-w-[860px] mx-auto">
           <div className="flex-center gap-2 md:mb-10 mb-8">
             <Image
