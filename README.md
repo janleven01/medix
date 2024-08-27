@@ -25,7 +25,7 @@
 3. 📦 [Installation](#installation)
 4. 🧩 [Snippets (Code to Copy)](#snippets)
 5. 🔗 [Assets](#assets)
-6. 📁 [Folder Structure](folder-structure)
+6. 📁 [Folder Structure](#folder-structure)
 7. 🌱 [Challenges and Learnings](#challenges)
 
 ## <a name="features">✨ Features</a>
