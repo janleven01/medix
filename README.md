@@ -744,7 +744,7 @@ medix/
 
 1. **Form Validation 🔍**
 
-- Implementing robust form validation and ensuring data integreity using a combination of react-hook-form for managing form state and Zod for schema validation.
+- Implementing robust form validation and ensuring data integrity using a combination of react-hook-form for managing form state and Zod for schema validation.
 - This approach deepened my understanding of creating maintainable, type safe, and scalable form validation systems.
 
 2. **Asynchronous Operations 🔁**
