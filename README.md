@@ -44,7 +44,7 @@
 
 🔹**Frontend:** React, Next.js, Typescript, TailwindCSS, shadcn/ui
 
-🔹**Backend:** Node.js, Appwrite
+🔹**Database:** Appwrite
 
 🔹**Deployment:** Vercel
 
